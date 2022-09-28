@@ -16,7 +16,7 @@ def getDB():
 @bp.route('/show')
 @login_required
 def show():
-    db = correo2098_01
+    db = ?
     messages = db.execute(
         QUERY
     ).fetchall()
