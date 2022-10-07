@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2 class="text-slate-700 my-2">{% block title %}Registro{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="container_register">
+  <form method="post" action="{{ url_for('auth.register')}}" class="formulario_registro" id="formularioRegistro">
+    <p><label for="username">Usuario</label><br>
+    <input type="text" name="username" id="username" class="rounded-md mb-2" required></p>
+    <p><label for="email address">Email</label><br>
+    <input type="email" name="email" id="email" class="rounded-md mb-2" required></p>
+    <p><label for="password">Contraseña</label><br>
+    <input type="password" name="password" id="password" class="rounded-md mb-6" required></p>
+    <button type="submit" class="crear" id="btnRegistro">Registrarse</button>
+  </form>
+</div>
+{% endblock %}

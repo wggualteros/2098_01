@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2 class="text-slate-700 my-2">{% block title %}Recuperar Contraseña{% endblock %}</h2>
+{% endblock %}
+
+{% block content %}
+<br><br>
+<div class="container_register">
+  <form method="post" action="{{ url_for('auth.forgot')}}" class="formulario_registro">
+    <p><label for="email">Escribe tu correo electrónico</label><br>
+    <input type="email" name="email" id="email" class="rounded-md mb-6 email1" required ></p>
+    <button type="submit" class="crear">Forgot</button>
+  </form>
+</div>
+<br><br><br><br><br>
+{% endblock %}

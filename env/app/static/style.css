@@ -1,0 +1,170 @@
+html { background: #fff; padding: 0rem; }
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-bottom: 2em;
+    font-size: 16px;
+    min-height: 100vh;
+}
+h1 { color: #377ba8; margin: 1rem 0; }
+hr { border: none; border-top: 1px solid lightgray; }
+.container_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #42328D;
+    padding: 10px;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition:all 0.4s linear;
+    color: white;
+    
+}
+.menu ul li a:hover {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #D9772C;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    padding-left: 15px;
+}
+
+footer{
+    background-color: #42328D;
+    color: #fff;
+    padding:0.5rem;
+    font-size: 12px;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bienvenidos{ size: 60px; font-weight: bold; text-align: center; color: #42328D; display: flex; justify-content: center;}
+.content { padding: 0 1rem 1rem; }
+.content > header { border-bottom: 1px solid lightgray; display: flex; align-items: flex-end; }
+.content > header h1 { flex: auto; margin: 1rem 0 0.25rem 0; }
+.flash { margin: 1em 0; padding: 1em; }
+.post > header { display: flex; align-items: flex-end; font-size: 0.85em; }
+.post > header > div:first-of-type { flex: auto; }
+.post > header h1 { font-size: 1.5em; margin-bottom: 0; }
+.post .about { color: slategray; font-style: italic; }
+.post .body { white-space: pre-line; }
+.content:last-child { margin-bottom: 0; }
+
+.content label { font-weight: bold; margin-bottom: 0.5em; text-align: center;}
+.content textarea { resize: vertical; }
+input.danger { color: #cc2f2e; }
+/*input[type=submit] { align-self: start; min-width: 10em; }
+input[type=submit]:hover { background-color: #377ba8; }*/
+
+
+/*formulario de registro*/
+.container_register {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 57px;
+}
+
+.formulario_registro { 
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #796fa8;
+    box-shadow: 3px 3px 6px #43328d96 ;
+    padding: 20px;
+    width: 50%;
+}
+
+input {
+    width: 50%;
+}
+.crear{
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition:all 0.2s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition:all 0.2s linear;
+    color: #42328D;
+    padding: 10px;
+}
+button:hover {
+    color: white;
+    background-color: #42328D;
+}
+
+.email1 {
+    width: 100%;
+}
+
+/*contenedor mensaje*/
+.container_mensaje {    
+    padding: 1rem;
+    margin-bottom: 35px;
+    margin-left: 20px;
+}
+
+.txtmensaje {
+height: 31px;
+}
+
+.txtarea-mensaje{
+    resize: none;
+
+}
+.enviar{
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition:all 0.2s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    transition:all 0.2s linear;
+    color: #42328D;
+    padding: 10px;
+}
+
+
+.submenu
+{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 65%;
+    
+}
+.submenu a {
+    color: #42328D;
+    margin-left: 1rem;
+}
+.submenu a:hover {
+    color: #D9772C;
+    text-decoration: underline;
+}
+
+.usuario:hover{
+    text-decoration: underline;
+}

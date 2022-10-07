@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="bg-slate-900">
+  <head>
+    <title>{% block title %}Mensajeria{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container_menu">
+        <a href="{{ url_for('home') }}"><img src="/static/images/logo.png" alt="logo" width="90px" class="logo"></a>
+    <nav class="menu">
+      <ul>
+        {% if g.user %}
+          <li><span><a href="{{ url_for('inbox.show') }}"><p style="color: white;" class="usuario">{{ g.user['username'] }}</p></a></span>
+          <li><a href="{{ url_for('auth.logout') }}">Cerrar sesión</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Registro</a>
+          <li><a href="{{ url_for('auth.login') }}">Iniciar sesión</a>
+          <li><a href="{{ url_for('auth.forgot') }}">¿Olvidaste tu contraseña?</a>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+  </header>
+    <section class="content">
+      <header class="contenido">
+        {% block header %}{% endblock %}
+      </header>
+      {% for message in get_flashed_messages() %}
+        <div class="flash rounded-md bg-indigo-300 border-indigo-600 text-indigo-800">{{ message }}</div>
+      {% endfor %}
+      {% block content %}{% endblock %}
+    </section>
+    <footer>
+      <p>Grupo 1 NRC2098</p>
+    </footer>
+  </body>
+</html>
